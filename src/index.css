@@ -7,9 +7,7 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Outfit";
 }
 
 code {
@@ -17,13 +15,24 @@ code {
     monospace;
 }
 
+/* Page Styles */
+
+h1 {
+  font-weight: 400;
+}
+
 .page {
+  padding: 2em;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  max-width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+/* Styles for splash */
 
 .splash {
   /* border: 1px solid; */
@@ -42,4 +51,95 @@ code {
   font-family: "Outfit";
   font-size: 2.05em;
   line-height: 1.75em;
+}
+
+.skill-set {
+  font-size: 3em;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  padding-top: 0.5em;
+}
+
+/* Styles for About Me */
+
+.about-content {
+  width: 40em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.about-content > p {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  text-align: center;
+  text-wrap: pretty;
+}
+
+/* Styles for Websites */
+
+.website-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  gap: 1.5em;
+}
+
+.website-content > p {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  text-align: center;
+  text-wrap: pretty;
+  max-width: 40em;
+}
+
+.website-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.website-examples > div {
+  width: 25em;
+  height: 15em;
+  border: 1px solid;
+}
+
+/* Styles for WebApps */
+
+.web-apps-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  gap: 1.5em;
+}
+
+.web-apps-content > p {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  text-align: center;
+  text-wrap: pretty;
+  max-width: 40em;
+}
+
+.web-apps-examples {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.web-apps-examples > div {
+  width: 25em;
+  height: 15em;
+  border: 1px solid;
 }
