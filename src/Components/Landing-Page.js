@@ -4,14 +4,13 @@ export default function SplashPage() {
   return (
     <div className="page">
       <div className="splash">
-        <h1>I</h1>
-        <h1>Am</h1>
-        <h1>Sam</h1>
+        <h2>I</h2>
+        <h2>Am</h2>
+        <h2>Sam</h2>
         <TypeAnimation
-          sequence={["Memorial Mason & Aspiring Web Developer"]}
+          sequence={["Memorial Mason & \nAspiring Web\nDeveloper"]}
           wrapper="span"
           cursor={true}
-          repeat={Infinity}
           className="splash-paragraph"
         />
       </div>
