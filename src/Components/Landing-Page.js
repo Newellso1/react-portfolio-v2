@@ -22,11 +22,11 @@ export default function SplashPage() {
           className="splash-paragraph"
         />
         <div className="skill-set">
-          <Fade cascade delay={2250} triggerOnce={true} duration={625}>
-            <FontAwesomeIcon icon={faHtml5} />
-            <FontAwesomeIcon icon={faCss3Alt} />
-            <FontAwesomeIcon icon={faJs} />
-            <FontAwesomeIcon icon={faReact} />
+          <Fade cascade delay={2250} triggerOnce={true} duration={615}>
+            <FontAwesomeIcon icon={faHtml5} className="html-icon" />
+            <FontAwesomeIcon icon={faCss3Alt} className="css-icon" />
+            <FontAwesomeIcon icon={faJs} className="javascript-icon" />
+            <FontAwesomeIcon icon={faReact} className="react-icon" />
           </Fade>
         </div>
       </div>

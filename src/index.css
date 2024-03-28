@@ -21,6 +21,18 @@ h1 {
   font-weight: 400;
 }
 
+.App > .container {
+  background: rgb(232, 236, 237);
+  background: linear-gradient(
+    45deg,
+    rgba(214, 239, 245, 0.767) 50%,
+    rgba(130, 220, 243, 0.486) 80%
+  );
+  max-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 .page {
   padding: 2em;
   width: 100vw;
@@ -30,6 +42,18 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.navigation {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  border: 1px solid;
+  transition: height 150ms ease;
+}
+
+.navigation > .button {
+  font-size: 2em;
 }
 
 /* Styles for splash */
@@ -61,6 +85,29 @@ h1 {
   padding-top: 0.5em;
 }
 
+.html-icon {
+  filter: drop-shadow(0.1em 0.1em 0.175em #ee4319)
+    drop-shadow(-0.1em -0.1em 00.175em #f09143);
+  color: rgba(0, 0, 0, 0.849);
+}
+
+.css-icon {
+  filter: drop-shadow(0.1em 0.1em 0.175em #8dcdf5)
+    drop-shadow(-0.1em -0.1em 0.175em #25436e);
+  color: rgba(0, 0, 0, 0.849);
+}
+
+.javascript-icon {
+  filter: drop-shadow(0.1em 0.1em 0.175em #e0ee20)
+    drop-shadow(-0.1em -0.1em 0.175em #eeff01);
+  color: rgba(0, 0, 0, 0.849);
+}
+
+.react-icon {
+  filter: drop-shadow(0.1em 0.1em 0.175em #2a9bb8)
+    drop-shadow(-0.1em -0.1em 0.175em #01c7f8);
+  color: rgba(0, 0, 0, 0.849);
+}
 /* Styles for About Me */
 
 .about-content {
