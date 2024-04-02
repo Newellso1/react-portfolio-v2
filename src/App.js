@@ -5,6 +5,7 @@ import SplashPage from "./Components/Landing-Page";
 import Navbar from "./Components/Navbar";
 import WebApps from "./Components/Web-apps";
 import Websites from "./Components/Websites";
+import NavLinks from "./Components/Navigation-Links";
 
 function App() {
   const [navOpen, setNavOpen] = useState(false);
@@ -18,6 +19,7 @@ function App() {
         <WebApps />
         <Contact />
         <Navbar navOpen={navOpen} setNavOpen={setNavOpen} />
+        <NavLinks navOpen={navOpen} setNavOpen={setNavOpen} />
       </div>
     </div>
   );

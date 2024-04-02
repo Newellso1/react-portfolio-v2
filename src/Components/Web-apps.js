@@ -2,7 +2,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 export default function WebApps() {
   return (
-    <div className="page">
+    <div className="page" id="Webapps">
       <Fade>
         <div className="web-apps-content">
           <h1>WebApps</h1>

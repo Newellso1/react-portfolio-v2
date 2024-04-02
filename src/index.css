@@ -28,9 +28,6 @@ h1 {
     rgba(214, 239, 245, 0.767) 50%,
     rgba(130, 220, 243, 0.486) 80%
   );
-  max-height: 100vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .page {
@@ -45,15 +42,101 @@ h1 {
 }
 
 .navigation {
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 1.25em;
+  left: 1.25em;
   transition: height 150ms ease;
+  z-index: 10;
 }
 
 .navigation > .button {
-  font-size: 2em;
+  border: 0.2em solid rgb(105, 165, 180);
+  border-radius: 0.5em;
+  height: 2.25em;
+  width: 2.25em;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+.navigation > .button > .button-line-1 {
+  width: 1em;
+  height: 0.25em;
+  background-color: rgb(105, 165, 180);
+  border-radius: 0.5em;
+  position: absolute;
+  transition: rotate 150ms;
+}
+
+.navigation > .button > .button-line-2 {
+  width: 1em;
+  height: 0.25em;
+  background-color: rgb(105, 165, 180);
+  border-radius: 0.5em;
+  rotate: 90deg;
+  position: absolute;
+  transition: rotate 150ms;
+}
+
+.navigation-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -10em;
+  height: 100vh;
+  background-color: white;
+  width: 10em;
+  box-shadow: 0 0 1em rgba(105, 165, 180, 0.719);
+  transition: left 300ms ease;
+}
+
+.navigation-links-open {
+  left: 0em;
+}
+
+.navigation-links > div > ul {
+  list-style: none;
+  position: relative;
+  top: 5em;
+  font-size: 1.25em;
+  color: rgb(53, 91, 100);
+}
+
+.navigation-links > div > ul > li {
+  margin: 1em 0 0 0;
+  font-weight: 500;
+  text-shadow: 0;
+  cursor: pointer;
+  transition: text-shadow 100ms ease;
+}
+
+.navigation-links > div > ul > li:hover {
+  text-shadow: 0 0 0.025em rgb(53, 91, 100);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25em;
+  font-size: 1.7em;
+  position: absolute;
+  bottom: 0.75em;
+  margin-right: 0.25em;
+}
+
+.social-links > a {
+  color: rgb(53, 91, 100);
+  transition: color 100ms ease;
+}
+
+.social-links > a:hover {
+  color: rgb(37, 64, 70);
 }
 
 /* Styles for splash */

@@ -1,9 +1,8 @@
 import { Fade } from "react-awesome-reveal";
-
 export default function AboutMe() {
   return (
-    <div className="page">
-      <Fade>
+    <div className="page" id="About">
+      <Fade delay={300}>
         <div className="about-content">
           <h1>About Me</h1>
           <p>

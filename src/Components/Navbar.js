@@ -1,16 +1,21 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquarePlus } from "@fortawesome/free-regular-svg-icons";
-import { faSquareMinus } from "@fortawesome/free-regular-svg-icons";
 
 export default function Navbar({ navOpen, setNavOpen }) {
-  const navStyle = {
-    height: navOpen ? "10em" : "",
+  const buttonRotate1 = {
+    rotate: navOpen ? "45deg" : "",
+    width: navOpen ? "1.125em" : "",
+  };
+
+  const buttonRotate2 = {
+    rotate: navOpen ? "-45deg" : "",
+    width: navOpen ? "1.125em" : "",
   };
 
   return (
-    <div className="navigation" style={navStyle}>
+    <div className="navigation">
       <div className="button" onClick={() => setNavOpen(!navOpen)}>
-        <FontAwesomeIcon icon={navOpen ? faSquareMinus : faSquarePlus} />
+        <div className="button-line-1" style={buttonRotate1}></div>
+        <div className="button-line-2" style={buttonRotate2}></div>
       </div>
     </div>
   );

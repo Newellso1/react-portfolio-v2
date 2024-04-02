@@ -10,7 +10,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function SplashPage() {
   return (
-    <div className="page">
+    <div id="Home" className="page">
       <div className="splash">
         <h2>I</h2>
         <h2>Am</h2>
