@@ -13,27 +13,27 @@ export default function NavLinks({ navOpen, setNavOpen }) {
     >
       <div>
         <ul>
-          <li>
+          <li className="link">
             <Link to="Home" smooth onClick={handleNavClose}>
               Home
             </Link>
           </li>
-          <li>
+          <li className="link">
             <Link to="About" smooth onClick={handleNavClose}>
               About
             </Link>
           </li>
-          <li>
+          <li className="link">
             <Link to="Websites" smooth onClick={handleNavClose}>
               Websites
             </Link>
           </li>
-          <li>
+          <li className="link">
             <Link to="Webapps" smooth onClick={handleNavClose}>
               Webapps
             </Link>
           </li>
-          <li>
+          <li className="link">
             <Link to="Contact" smooth onClick={handleNavClose}>
               Contact
             </Link>

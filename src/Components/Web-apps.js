@@ -1,4 +1,5 @@
 import { Fade, Slide } from "react-awesome-reveal";
+import Project from "./Project";
 
 export default function WebApps() {
   return (
@@ -14,13 +15,23 @@ export default function WebApps() {
           </p>
           <div className="web-apps-examples">
             <Slide direction="up">
-              <div>1</div>
+              <Project
+                title="Weather App"
+                description="A basic weather app that using an api to fetch the weather for the selected city"
+                websiteLink="https://react-weather-app-newell.netlify.app/"
+                githubLink="https://github.com/Newellso1/weather-app"
+              />
             </Slide>
             <Slide direction="up" delay={200}>
-              <div>2</div>
+              <Project
+                title="MyMDB"
+                description="A webapp that  the OMDB api to generate a list of movies based on users search, clicking a movie displays the relevant information. Movies can also be added and removed from users favourites"
+                websiteLink="https://mymdb-newell.netlify.app/"
+                githubLink="https://github.com/Newellso1/my-movie-database"
+              />
             </Slide>
             <Slide direction="up" delay={250}>
-              <div>3</div>
+              <Project />
             </Slide>
           </div>
         </div>
