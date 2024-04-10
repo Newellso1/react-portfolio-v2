@@ -23,7 +23,7 @@ export default function Contact() {
               />
             </div>
             <textarea id="Message" name="message" />
-            <input type="submit" value="submit" />
+            <input className="input-button" type="submit" value="submit" />
           </form>
         </div>
       </Fade>

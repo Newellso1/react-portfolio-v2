@@ -401,7 +401,7 @@ input:-webkit-autofill:focus {
   font-family: "Outfit";
 }
 
-.contact-content > form > button {
+.input-button {
   font-size: 1.25em;
   padding: 0.25em;
   background-color: white;
