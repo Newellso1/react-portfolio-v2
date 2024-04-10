@@ -40,4 +40,23 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <form name="contact" method="post" netlify>
+    <input type="hidden" name="form-name" value="contact"></input>
+    <div className="form-top">
+      <input
+        id="Name"
+        name="name"
+        type="text"
+        placeholder="Name?"
+      ></input>
+      <input
+        id="Email"
+        name="email"
+        type="email"
+        placeholder="Email?"
+      ></input>
+    </div>
+    <textarea id="Message" name="message"></textarea>
+    <input type="submit"></input>
+  </form>
 </html>
