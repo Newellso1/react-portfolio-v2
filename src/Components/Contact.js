@@ -12,7 +12,7 @@ export default function Contact() {
             connecting with me through my social media channels.
           </p>
           <form name="contact" netlify>
-            <input type="hidden" name="form-name" value="contact"></input>
+            <input type="hidden" name="form-name" value="contact" />
             <div className="form-top">
               <input
                 id="Name"
