@@ -14,20 +14,15 @@ export default function Contact() {
           <form name="contact" netlify>
             <input type="hidden" name="form-name" value="contact" />
             <div className="form-top">
-              <input
-                id="Name"
-                name="name"
-                type="text"
-                placeholder="Name?"
-              ></input>
+              <input id="Name" name="name" type="text" placeholder="Name?" />
               <input
                 id="Email"
                 name="email"
                 type="email"
                 placeholder="Email?"
-              ></input>
+              />
             </div>
-            <textarea id="Message" name="message"></textarea>
+            <textarea id="Message" name="message" />
             <input type="submit" value="submit" />
           </form>
         </div>
