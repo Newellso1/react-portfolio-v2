@@ -28,7 +28,7 @@ export default function Contact() {
               ></input>
             </div>
             <textarea id="Message" name="message"></textarea>
-            <button>Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </Fade>
