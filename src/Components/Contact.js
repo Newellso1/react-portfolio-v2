@@ -11,7 +11,7 @@ export default function Contact() {
             don't hesitate to reach out, either by the form below or by
             connecting with me through my social media channels.
           </p>
-          <form name="contact" method="post" netlify>
+          <form name="contact" netlify>
             <input type="hidden" name="form-name" value="contact"></input>
             <div className="form-top">
               <input
@@ -28,7 +28,7 @@ export default function Contact() {
               ></input>
             </div>
             <textarea id="Message" name="message"></textarea>
-            <input type="submit"></input>
+            <input type="submit" value="submit" />
           </form>
         </div>
       </Fade>
