@@ -10,11 +10,6 @@ body {
   font-family: "Outfit";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 /* Page Styles */
 
 h1 {
@@ -328,4 +323,92 @@ h1 {
 
 .project-links > a {
   color: black;
+}
+
+/* Contact Styles */
+
+.contact-content {
+  width: 42em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background-color: white;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0px 25px 67px -9px rgba(92, 175, 219, 0.61);
+  border-radius: 1em;
+  transition: box-shadow 200ms ease;
+}
+
+.contact-content:hover {
+  webkit-box-shadow: 0px 25px 67px -9px rgba(92, 175, 219, 0.61);
+  -moz-box-shadow: 0px 25px 67px -9px rgba(92, 175, 219, 0.61);
+  box-shadow: 0px 25px 67px -9px rgba(57, 111, 139, 0.61);
+}
+
+.contact-content > form {
+  display: flex;
+  flex-direction: column;
+  height: 30em;
+  gap: 1em;
+}
+
+.contact-content > form > .form-top {
+  display: flex;
+  gap: 1em;
+}
+
+.contact-content > form > .form-top > input {
+  padding: 0.5em 0.5em 0.15em 0.5em;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 1.15em;
+  color: black;
+  opacity: 1;
+}
+
+.form-top > input::placeholder {
+  font-size: 1f5em;
+  opacity: 1;
+  color: black;
+}
+
+.form-top > input:autofill {
+  background-color: white;
+}
+
+input:active {
+  outline: none;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px white inset; /* Change the color to your own background color */
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset; /*your box-shadow*/
+}
+
+.contact-content > form > textarea {
+  resize: none;
+  height: 25em;
+  padding: 0.75em 0.75em;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 1.05em;
+  font-family: "Outfit";
+}
+
+.contact-content > form > button {
+  font-size: 1.25em;
+  padding: 0.25em;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid black;
+  width: 7em;
+  margin: 0 auto;
 }
