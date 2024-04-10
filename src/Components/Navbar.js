@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export default function Navbar({ navOpen, setNavOpen }) {
   const buttonRotate1 = {
     rotate: navOpen ? "45deg" : "",
