@@ -10,6 +10,14 @@ import NavLinks from "./Components/Navigation-Links";
 function App() {
   const [navOpen, setNavOpen] = useState(false);
 
+  const handleScroll = () => {
+    if (navOpen) {
+      setNavOpen(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
     <div className="App">
       <div className="container">
