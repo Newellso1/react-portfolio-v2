@@ -11,8 +11,8 @@ export default function Contact() {
             don't hesitate to reach out, either by the form below or by
             connecting with me through my social media channels.
           </p>
-          <form name="contact" netlify>
-            <input type="hidden" name="form-name" value="contact" />
+          <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+            <input type="hidden" name="form-name" value="contact"></input>
             <div className="form-top">
               <input id="Name" name="name" type="text" placeholder="Name?" />
               <input
