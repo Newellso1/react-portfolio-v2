@@ -415,7 +415,8 @@ input:-webkit-autofill:focus {
 
 @media screen and (max-width: 900px) {
   .social-links {
-    bottom: 2em;
+    position: fixed;
+    bottom: 1em;
   }
 
   .about-content {
