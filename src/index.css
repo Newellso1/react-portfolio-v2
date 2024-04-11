@@ -419,10 +419,20 @@ input:-webkit-autofill:focus {
   }
 
   .contact-content {
-    width: 22em;
+    width: 23em;
   }
 
   .contact-content > form > .form-top > input {
     width: 8em;
+  }
+
+  .web-apps-examples > div {
+    width: 23em;
+    height: 15em;
+  }
+
+  .website-examples > div {
+    width: 23em;
+    height: 15em;
   }
 }
