@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AboutMe from "./Components/About-Me";
 import Contact from "./Components/Contact";
 import SplashPage from "./Components/Landing-Page";
@@ -10,13 +10,19 @@ import NavLinks from "./Components/Navigation-Links";
 function App() {
   const [navOpen, setNavOpen] = useState(false);
 
-  const handleScroll = () => {
-    if (navOpen) {
-      setNavOpen(false);
-    }
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (navOpen) {
+        setNavOpen(false);
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [navOpen]);
 
   return (
     <div className="App">
