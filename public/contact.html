@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="hidden" name="form-name" value="contact"></input>
+        <div className="form-top">
+          <input id="Name" name="name" type="text" placeholder="Name?" />
+          <input
+            id="Email"
+            name="email"
+            type="email"
+            placeholder="Email?"
+          />
+        </div>
+        <textarea id="Message" name="message" />
+        <input className="input-button" type="submit" value="submit" />
+      </form>
+</body>
+</html>
