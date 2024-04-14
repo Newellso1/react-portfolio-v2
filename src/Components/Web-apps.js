@@ -30,7 +30,12 @@ export default function WebApps() {
               />
             </Slide>
             <Slide direction="up" delay={250}>
-              <Project />
+              <Project
+                title="React Store - Work in Progress"
+                description="This one is a work in progress, I set out creating a simple store page where the user could add and remove items from their basket and it developed more into a fully fledged webstore"
+                websiteLink="https://elysian-store.netlify.app/"
+                githubLink="https://github.com/Newellso1/elysian-store"
+              />
             </Slide>
           </div>
         </div>
