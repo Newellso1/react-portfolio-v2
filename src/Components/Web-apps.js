@@ -24,9 +24,10 @@ export default function WebApps() {
             <Slide direction="up" delay={200}>
               <Project
                 title="MyMDB"
-                description="A webapp that  the OMDB api to generate a list of movies based on users search, clicking a movie displays the relevant information. Movies can also be added and removed from users favourites"
-                websiteLink="https://mymdb-newell.netlify.app/"
-                githubLink="https://github.com/Newellso1/my-movie-database"
+                description="A webapp that  the OMDB api to generate a list of movies based on users search, clicking a movie displays the relevant information. Movies can also be added and removed from users favourites. For the latest version of this I have used tailwind for ease of styling and to make the experience a lot more responsive on mobile (Old version - https://mymdb-newell.netlify.app/)
+                "
+                websiteLink="https://mymdb-tailwind.netlify.app"
+                githubLink="https://github.com/Newellso1/MyMDB"
               />
             </Slide>
             <Slide direction="up" delay={250}>
